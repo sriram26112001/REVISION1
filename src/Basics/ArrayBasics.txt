@@ -1,0 +1,13 @@
+----Array----
+
+* Array is a Data Structure that stores Collection of Similar data type
+
+---Syntax for Declaration of Array-----
+
+datatype[] variable_name=new datatype[size];
+
+* Here Object is created in heap memory
+* primitives(int,char,bool,float) are stored in stack memory in java while a string type,Hash Map
+  Arrays are stored in heap memory.
+* Array objects are created during run time. While the variable_name which has the reference to the array
+  object is created during compile Time.
