@@ -1,0 +1,205 @@
+---ArrayList----
+
+* In java there is ArrayList, which is a dynamic array that is similar to vector in c++.
+* The size of the ArrayList Automatically Doubles by 2 to Incorporate More elements when the size of the ArrayList is full.
+
+---Syntax for declaration of the ArrayList----
+
+ArrayList<datatype> variable_name=new Arraylist<datatype>();
+
+---Creating an ArrayList---
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Creating an ArrayList of Strings
+        ArrayList<String> names = new ArrayList<>();
+
+        // Creating an ArrayList of Integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+    }
+}
+
+---Adding Elements----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        // Adding elements to the end of the list
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        // Adding an element at a specific index
+        names.add(1, "Dave"); // Alice, Dave, Bob, Charlie
+    }
+}
+
+---Accessing Element----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Accessing elements
+        String firstName = names.get(0); // Alice
+        String secondName = names.get(1); // Bob
+    }
+}
+
+----Modifying elements----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Modifying an element at a specific index
+        names.set(1, "Charlie"); // Alice, Charlie
+    }
+}
+
+----Removing Elements-----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        // Removing an element by index
+        names.remove(1); // Removes "Bob", resulting in Alice, Charlie
+
+        // Removing an element by value
+        names.remove("Alice"); // Removes "Alice", resulting in Charlie
+    }
+}
+
+----Checking the size----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Getting the size of the list
+        int size = names.size(); // 2
+    }
+}
+
+----Checking if the list is Empty-----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        // Checking if the list is empty
+        boolean isEmpty = names.isEmpty(); // true
+
+        names.add("Alice");
+        isEmpty = names.isEmpty(); // false
+    }
+}
+
+---checking for containment-----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Checking if the list contains a specific element
+        boolean hasAlice = names.contains("Alice"); // true
+        boolean hasDave = names.contains("Dave"); // false
+    }
+}
+
+--clearing the list----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Clearing all elements
+        names.clear(); // List is now empty
+    }
+}
+
+---Converting to an Array----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+
+        // Converting the list to an array
+        String[] namesArray = names.toArray(new String[0]);
+    }
+}
+
+---Sorting the list----
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Charlie");
+        names.add("Alice");
+        names.add("Bob");
+
+        // Sorting the list
+        Collections.sort(names); // Alice, Bob, Charlie
+    }
+}
+
+---last Index of and index of ----
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Alice");
+
+        // Getting the index of the first occurrence
+        int firstIndex = names.indexOf("Alice"); // 0
+
+        // Getting the index of the last occurrence
+        int lastIndex = names.lastIndexOf("Alice"); // 2
+    }
+}
+
+
