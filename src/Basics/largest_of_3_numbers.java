@@ -11,11 +11,9 @@ public class largest_of_3_numbers {
             arr[i]=in.nextInt();
         }
         int max=Integer.MIN_VALUE;
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]>max)
-            {
-                max=arr[i];
+        for (int j : arr) {
+            if (j > max) {
+                max = j;
             }
         }
         System.out.println("the largest of the three numbers is"+max);
