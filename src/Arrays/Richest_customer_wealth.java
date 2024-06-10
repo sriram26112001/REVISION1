@@ -35,16 +35,13 @@ public class Richest_customer_wealth {
     public static int richest_customer_wealth_finder(int[][] accounts)
     {
         int sum=Integer.MIN_VALUE;
-        for(int i=0;i<accounts.length;i++)
-        {
-            int total=0;
-            for(int j=0;j<accounts[0].length;j++)
-            {
-                total=total+accounts[i][j];
+        for (int[] account : accounts) {
+            int total = 0;
+            for (int j = 0; j < accounts[0].length; j++) {
+                total = total + account[j];
             }
-            if(total>sum)
-            {
-                sum=total;
+            if (total > sum) {
+                sum = total;
             }
         }
         return sum;
