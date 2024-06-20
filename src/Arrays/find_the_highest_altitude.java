@@ -15,11 +15,9 @@ public class find_the_highest_altitude {
     public static int maximum_finder(int[] arr)
     {
         int maximum=Integer.MIN_VALUE;
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]>maximum)
-            {
-                maximum=arr[i];
+        for (int j : arr) {
+            if (j > maximum) {
+                maximum = j;
             }
         }
         return maximum;
