@@ -15,6 +15,7 @@ public class Maximum_Subarray_sum {
     }
     public static int maximum_sum_finder(int[] arr)
     {
+        //kadanes algo
         int sum=0;
         int i;
         int ans=Integer.MIN_VALUE;
