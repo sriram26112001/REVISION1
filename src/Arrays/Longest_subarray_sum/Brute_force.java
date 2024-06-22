@@ -1,5 +1,4 @@
 package Arrays.Longest_subarray_sum;
-import java.sql.SQLOutput;
 import java.util.*;
 public class Brute_force {
     public static void main(String[] args) {
