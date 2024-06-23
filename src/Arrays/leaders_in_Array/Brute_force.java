@@ -25,6 +25,7 @@ public class Brute_force {
                 if(arr[j]>arr[i])
                 {
                     leader=false;
+                    break;
                 }
             }
             if(leader)
